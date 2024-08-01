@@ -3,12 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
     font-family: "Poppins", "Montserrat";
     background-color: #1a2b42;
     font-size: 15px;
 }
+
 
 :root {
     --animation-duration: 1s;
@@ -88,3 +88,9 @@ body {
     }
   }
   
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+

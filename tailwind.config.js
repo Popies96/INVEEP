@@ -36,6 +36,11 @@ module.exports = {
         background: "#1A2B42",
         grey: "#363A51",
         lightgrey: "#4C5267",
+        dark: "#1D2430",
+        "body-color": {
+          DEFAULT: "#788293",
+          dark: "#959CB1",
+        },
       },
     },
   },
