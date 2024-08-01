@@ -1,0 +1,124 @@
+.relative {
+    position: relative;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.rounded-sm {
+    border-radius: 4px;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.shadow-three {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-black {
+    color: #000000;
+}
+
+.border-b {
+    border-bottom-width: 1px;
+}
+
+.border-body-color {
+    border-color: #e0e0e0;
+}
+
+
+
+.text-base {
+    font-size: 1rem;
+}
+
+.text-body-color {
+    color: #606060;
+}
+
+.bg-primary {
+    background-color: #4A6CF7;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.shadow-submit {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.duration-300 {
+    transition-duration: 300ms;
+}
+
+.hover\:bg-primary\/90:hover {
+    background-color: rgba(74, 108, 247, 0.9);
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mb-5 {
+    margin-bottom: 1.25rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.rounded-sm {
+    border-radius: 4px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.text-base {
+    font-size: 1rem;
+}
+
+.leading-relaxed {
+    line-height: 1.625;
+}
+
+.text-center {
+    text-align: center;
+}

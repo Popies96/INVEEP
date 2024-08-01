@@ -1,0 +1,16 @@
+@keyframes floatIn {
+    from {
+      transform: translate(20px,-20px); 
+      opacity: 0; /* Start invisible */
+    }
+    to {
+      transform: translateY(0); /* End position */
+      opacity: 1; /* End fully visible */
+    }
+  }
+  
+  .float-in {
+    animation: floatIn 1.5s ease-out; 
+    box-sizing: border-box;
+  }
+  

@@ -1,0 +1,15 @@
+.title-lg {
+    font-size: 1.875rem;
+    /* 30px */
+    line-height: 2.25rem;
+    /* 36px */
+}
+
+@media (min-width: 1280px) {
+    .title-lg {
+        font-size: 2.25rem;
+        /* 36px */
+        line-height: 2.5rem;
+        /* 40px */
+    }
+}
