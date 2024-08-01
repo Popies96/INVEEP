@@ -1,6 +1,6 @@
 <section>
-  <div class="mx-12 grid grid-cols-2">
-    <div class="my-12 mr-[-5em] justify-items-start text-left xl:mt-28">
+  <div class="mx-12 grid lg:mb-24 grid-cols-2">
+    <div class="my-8 mr-[-5em] justify-items-start text-left xl:mt-24">
       <h1 class="line text-2xl font-bold leading-tight text-white xl:text-5xl">
         AI and Computer Vision
         <br />
@@ -13,6 +13,7 @@
       </p>
       <button
         class="rounded-2xl bg-gradient-to-r from-blue from-30% to-primary px-8 py-2 text-white"
+        [ngStyle]="{ boxShadow: '0px 0px 15px 0px #5eb6ae' }"
       >
         Start now
       </button>
@@ -20,18 +21,9 @@
         About us ↗
       </button>
     </div>
-    <div class="w-full xl:ml-12 pl-[10%] pt-14">
+    <div class="w-full xl:ml-12 pl-[8%] pt-14">
       <img class="" src="../../../assets/Apple Computers.svg" alt="vide" />
     </div>
   </div>
-  <div class="flex flex-col  mb-6 items-center">
-    <p class="text-md pb-4 font-extralight text-white lg:text-lg">
-      Our amazing partners:
-    </p>
-    <img
-      class="w-3/4"
-      src="../../../assets/partnersList.svg"
-      alt="Partners List"
-    />
-  </div>
+  
 </section>

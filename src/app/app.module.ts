@@ -13,6 +13,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ContactInfoComponent } from './components/contact/contact-info/contact-info.component';
 import { SectionTitleComponent } from './components/section-title/section-title.component';
 import { ActionsComponent } from './components/actions/actions.component';
+import { FeaturesComponent } from './components/features/features.component';
+
 
 
 
@@ -30,6 +32,8 @@ import { ActionsComponent } from './components/actions/actions.component';
     ContactInfoComponent,
     SectionTitleComponent,
     ActionsComponent,
+    FeaturesComponent,
+    
     
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
