@@ -9,3 +9,82 @@ body {
     background-color: #1a2b42;
     font-size: 15px;
 }
+
+:root {
+    --animation-duration: 1s;
+    --t-xl: -30px; 
+    --t-yl: 30px; 
+    --t-xr: 30px; 
+    --t-yr: 30px; 
+    
+  }
+  
+  .trans-text-l {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    opacity: 0; /* Start invisible */
+    transform: translate(var(--t-xl), var(--t-yl)); 
+    animation: fadeIn var(--animation-duration) ease-out forwards; 
+  }
+  .trans-text{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    opacity: 0; /* Start invisible */
+    transform: translate(0, var(--t-yl)); 
+    animation: fadeIn var(--animation-duration) ease-out forwards; 
+  }
+  .trans-text-m-r{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    opacity: 0; /* Start invisible */
+    transform: translate(var(--t-xr),0 ); 
+    animation: fadeIn var(--animation-duration) ease-out forwards; 
+  }
+  .trans-text-m-l{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    opacity: 0; /* Start invisible */
+    transform: translate(var(--t-xl), 0); 
+    animation: fadeIn var(--animation-duration) ease-out forwards; 
+  }
+  .trans-obj{
+    opacity: 0; /* Start invisible */
+    transform: translate(0, var(--t-yl)); 
+    animation: fadeIn var(--animation-duration) ease-out forwards; 
+  }
+  .trans-obj-l{
+    opacity: 0; /* Start invisible */
+    transform: translate(var(--t-xl), var(--t-yl)); 
+    animation: fadeIn var(--animation-duration) ease-out forwards; 
+  }
+  .trans-obj-r{
+    opacity: 0; /* Start invisible */
+    transform: translate(var(--t-yr), var(--t-yr)); 
+    animation: fadeIn var(--animation-duration) ease-out forwards; 
+  }
+  .trans-text-r {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    opacity: 0; /* Start invisible */
+    transform: translate(var(--t-xr), var(--t-yr)); 
+    animation: fadeIn var(--animation-duration) ease-out forwards; 
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1; 
+      transform: translate(0, 0); /* Move to the final position */
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .hero-text {
+      font-size: 5rem;
+    }
+  }
+  
