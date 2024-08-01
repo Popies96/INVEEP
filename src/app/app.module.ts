@@ -8,12 +8,21 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
+
+import { AboutComponent } from './components/about/about.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { IntersectObserverDirective } from './components/intersect-observer.directive';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SolutionComponent } from './components/solution/solution.component';
+import { PromoComponent } from './components/promo/promo.component';
+
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ContactInfoComponent } from './components/contact/contact-info/contact-info.component';
 import { SectionTitleComponent } from './components/section-title/section-title.component';
 import { ActionsComponent } from './components/actions/actions.component';
 import { FeaturesComponent } from './components/features/features.component';
+
 
 
 
@@ -27,6 +36,17 @@ import { FeaturesComponent } from './components/features/features.component';
     LayoutComponent,
     HeroSectionComponent,
     ButtonsComponent,
+    AboutComponent,
+    TestimonialsComponent,
+    IntersectObserverDirective,
+    SolutionComponent,
+    PromoComponent,
+    
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
     FooterComponent,
     ContactComponent,
     ContactInfoComponent,
@@ -35,6 +55,7 @@ import { FeaturesComponent } from './components/features/features.component';
     FeaturesComponent,
     
     
+
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],

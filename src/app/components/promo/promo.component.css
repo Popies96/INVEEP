@@ -1,0 +1,22 @@
+:root {
+    --ui-light-border-color: #e0e0e0; 
+    --card-dark-bg: #f8f9fa; 
+    --bg-white: #ffffff;
+}
+
+[data-theme='dark'] {
+    --ui-light-border-color: #2c2c2c;
+    --card-dark-bg: #1c1c1c;
+}
+
+.border {
+    border: 1px solid var(--ui-light-border-color);
+}
+
+.dark .border {
+    border: 1px solid var(--ui-light-border-color);
+}
+
+.bg-dark {
+    background-color: var(--card-dark-bg);
+}
