@@ -1,0 +1,65 @@
+<header
+[ngClass]="{
+  'ud-header left-0 top-0 z-40 flex w-full items-center z-[999] transition-all duration-300': true,
+  'bg-transparent': !sticky,
+  'shadow-nav fixed bg-bright-gradient backdrop-blur-[30px] dark:border-dark-3/20 dark:bg-dark/10': sticky
+}"
+>
+  <div class="container mx-auto">
+    <div class="relative -mx-4 flex items-center justify-between"
+      [ngClass]="{  
+        'py-8 text-grey': !sticky,
+        'py-5 text-white ': sticky
+      }">
+      <div class="w-60 max-w-full px-4 ">
+        <img src="../../../assets/logo.png" alt="INVEEP" />
+      </div>
+      <div  class="flex w-full items-center justify-between px-4">
+        <nav class="hidden gap-8 md:flex ml-10">
+          <a href="#hero" class=" text-base hover:text-primary">
+            Home
+          </a>
+          <a href="#about" class=" text-base hover:text-primary">
+            About
+          </a>
+          <a href="#solution" class=" text-base hover:text-primary">
+            Solution
+          </a>
+          
+          <a href="#features" class=" text-base hover:text-primary">
+            Features
+          </a>
+          <a href="#testimonials" class=" text-base hover:text-primary">
+            Testimonials
+          </a>
+          
+          <a href="#contact" class=" text-base hover:text-primary">
+            Contact
+          </a>
+        </nav>
+        <div class="hidden items-center md:flex" >
+          <p class="rounded-2xl border-2 px-8 py-2 mr-6"
+            [ngClass]="{ 'border-white text-white': sticky,
+                         'border-grey text-grey': !sticky }" 
+                         (click)="scrollToContact()" >
+                 Contact-us
+           </p>
+          <button
+            [ngStyle]="{ boxShadow: '0px 0px 15px 0px #5eb6ae' }"
+            class="rounded-2xl bg-gradient-to-r from-blue from-30% to-primary px-8 py-2 text-white"
+          >
+            Get started
+          </button>
+        </div>
+        <div class="w-8 md:hidden ml-auto mr-4 ">
+          <img
+          
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png"
+            alt="navigation links button"
+          />
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,244 @@
+<app-layout>
+  <main>
+    <div class="bg-white ">
+      <div
+        class="mx-auto max-w-2xl py-4 scroll-py-20  sm:py-24 lg:max-w-7xl"
+      >
+        <div
+          class="flex flex-col md:flex-row justify-between gap-3 items-center w-full mb-10  lg:mt-0"
+        >
+          <div class="w-full flex-col">
+            <h2 class="text-2xl font-bold tracking-tight text-gray-600">
+            Visite our Stores
+          </h2>
+          <span class="text-primary text-xl">200 stores</span>
+          </div>
+
+          <div class="flex  justify-end gap-3 flex-col lg:flex-row w-full">
+            <div class="relative group">
+              <input
+                type="search"
+                 [(ngModel)]="searchTerm"
+                 (input) = "onSearch()"
+                autocomplete="nope"
+                placeholder="Find a Store ..."
+                class="text-sm input-bordered  rounded-md bg-gray-50 focus:outline-none border-1 border-gray-700 pl-14 py-4 text-gray-700 "
+                
+              /><span
+                class="flex justify-between items-center absolute inset-0 pointer-events-none px-2"
+                ><span class="pl-3"
+                  ><svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    class="text-gray-600"
+                    height="18"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M443.5 420.2L336.7 312.4c20.9-26.2 33.5-59.4 33.5-95.5 0-84.5-68.5-153-153.1-153S64 132.5 64 217s68.5 153 153.1 153c36.6 0 70.1-12.8 96.5-34.2l106.1 107.1c3.2 3.4 7.6 5.1 11.9 5.1 4.1 0 8.2-1.5 11.3-4.5 6.6-6.3 6.8-16.7.6-23.3zm-226.4-83.1c-32.1 0-62.3-12.5-85-35.2-22.7-22.7-35.2-52.9-35.2-84.9 0-32.1 12.5-62.3 35.2-84.9 22.7-22.7 52.9-35.2 85-35.2s62.3 12.5 85 35.2c22.7 22.7 35.2 52.9 35.2 84.9 0 32.1-12.5 62.3-35.2 84.9-22.7 22.7-52.9 35.2-85 35.2z"
+                    ></path></svg></span
+                ><span class=""></span
+              ></span>
+            </div>
+            <div>
+              <div class="relative w-full">
+                <div
+                  class="absolute inset-0 flex gap-2 pl-[1.1rem] pointer-events-none items-center"
+                >
+                  <span class="flex text-gray-600"
+                    ><svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 20 20"
+                      aria-hidden="true"
+                      height="20"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V3z"
+                        clip-rule="evenodd"
+                      ></path></svg></span
+                  ><span
+                    ><p
+                      class="text-gray-500 transition-all transfrom -translate-y-2 text-3xs"
+                    >
+                      Catégorie
+                    </p></span
+                  >
+                </div>
+                <select
+                  class="select pl-11 pt-8 mb-2 w-full rounded-md focus:outline-none border-[1px] border-gray-300 text-xs md:text-sm font-bold text-primary bg-gray-200/70 "
+                >
+                  <option></option>
+                  <option value="60be84bc50ab95b45b08a094">Véhicules</option>
+                  <option value="60be84bc50ab95b45b08a095">
+                    Pour la Maison et Jardin
+                  </option>
+                  <option value="60be84bc50ab95b45b08a098">
+                    Emploi et Services
+                  </option>
+                  <option value="">Immobilier</option>
+                  <option value="">Entreprises</option>
+                  <option value="">
+                    Habillement et Bien Etre
+                  </option>
+                  <option value="">
+                    Informatique et Multimedias
+                  </option>
+                  <option value="">
+                    Loisirs et Divertissement
+                  </option>
+                  <option value="">Vacances</option>
+                  <option value="">Autres</option>
+                </select>
+              </div>
+            </div>
+            <button
+              aria-label="Filtrer"
+              class="rounded-lg bg-gradient-to-r from-blue from-30% to-primary px-4 py-4 text-white"
+            >
+              <span
+                class="flex h-full w-full items-center justify-center gap-x-0 md:gap-x-2 gap-y-[2.5px] flex-row"
+                ><span class="ml-0 mr-0"
+                  ><svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                    class="text-white mr-2"
+                    height="20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V3z"
+                      clip-rule="evenodd"
+                    ></path></svg></span
+                ><span class="flex align-middle"
+                  ><span class="tracking-widest uppercase">Filtrer</span></span
+                ></span
+              >
+            </button>
+          </div>
+        </div>
+
+        <div *ngIf="filteredUsers.length > 0; else noUsersFound">
+          <div
+            class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-4 lg:grid-cols-4 lg:gap-5 xl:grid-cols-4 xl:gap-4 mt-4"
+          >
+            <div
+              *ngFor="let user of filteredUsers"
+              class="relative h-full w-full rounded-md flex md:justify-between flex-col p-8 border-[1px] border-gray-300 hover:border-primary md:aspect-grid bg-gradient-to-b from-neutral-500/10 to-neutral-500/0"
+              (click)="onSelect(user)"
+            >
+              <a class="cursor-pointer">
+                <div
+                  class="overflow-hidden pl-8 rounded-full lg:aspect-none group-hover:opacity-75"
+                >
+                  <img
+                    class="h-40 w-40 rounded-full ring-2 ring-white"
+                    [src]="user.profile_image ? user.profile_image : 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'"
+                    alt="User Profile Image"
+                  />
+                </div>
+                <div class="mt-4 flex justify-center items-center">
+                  <div class="text-center">
+                    <span class="text-sm text-primary">Store</span>
+                    <h2 class="text-lg font-medium text-gray-700">
+                      <a href="#">
+                        {{ user.username }}
+                      </a>
+                    </h2>
+                    <div
+                      class="flex flex-col justify-between h-24 gap-2 border-t pt-4"
+                    >
+                      <div
+                        class="relative flex text-sm items-center space-x-1 text-gray-400"
+                      >
+                        <div class="absolute top-0 -left-4 p-1">
+                          <svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 512 512"
+                            height="12"
+                            width="12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M128,256A128,128,0,1,0,256,384,128,128,0,0,0,128,256Zm379-54.86L400.07,18.29a37.26,37.26,0,0,0-64.14,0L229,201.14C214.76,225.52,232.58,256,261.09,256H474.91C503.42,256,521.24,225.52,507,201.14ZM480,288H320a32,32,0,0,0-32,32V480a32,32,0,0,0,32,32H480a32,32,0,0,0,32-32V320A32,32,0,0,0,480,288Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <span class="mt-[2px]">Véhicules</span>
+                      </div>
+                      <div
+                        class="relative flex text-2xs items-center space-x-1 text-gray-400"
+                      >
+                        <div class="absolute top-0 -left-4 p-1">
+                          <svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 20 20"
+                            aria-hidden="true"
+                            height="12"
+                            width="12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </div>
+                        <span class="mt-[1.5px] truncate">{{
+                          user.location
+                        }}</span>
+                      </div>
+                      <div
+                        class="relative flex text-2xs items-center space-x-1 text-gray-400"
+                      >
+                        <div class="absolute top-0 -left-4 p-1">
+                          <svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 20 20"
+                            aria-hidden="true"
+                            height="12"
+                            width="12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <span class="mt-[2px]">Check articles</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ng-template #noUsersFound>
+  <div class="text-center mt-8">
+    <p class="text-gray-500">No users found.</p>
+  </div>
+</ng-template>
+    </div>
+  </main>
+</app-layout>
