@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,7 +10,9 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 
-import { AboutComponent } from './components/about/about.component';
+
+
+import AboutComponent from './components/about/about.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { IntersectObserverDirective } from './components/intersect-observer.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -50,9 +53,9 @@ import { CarousselComponent } from './components/caroussel/caroussel.component';
     ActionsComponent,
     FeaturesComponent,
     AnimateOnScrollDirective,
-    CarousselComponent
+    CarousselComponent 
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [BrowserModule, AppRoutingModule,HttpClientModule,ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

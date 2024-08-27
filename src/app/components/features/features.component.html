@@ -1,8 +1,10 @@
 <section id="features" class="  md:py-24 lg:py-38 ">
-  <div class="absolute left-[-10%] top-[50%] -z-10 h-1/4 w-1/4 rounded-full bg-primary blur-[10em] xl:blur-[10em]"></div>
-  <div class="container py-9 mx-auto z-10">
+  <div class="absolute right-[-10%] rounded-full -z-10 bg-blue blur-[10em] xl:blur-[10em]" style="height: 20rem; width: 20rem;margin-bottom: 20em;"></div>
+  <div class="container py-9 mx-auto z-10"  [ngClass]="{'arabic-text': translationService.getCurrentLang() === 'ar',
+  'rtl': translationService.getCurrentLang() === 'ar'
+}" >
     <app-section-title class=" text-gray-400"
-      [title]="'Main Features'"
+      [title]="translations.features"
       [paragraph]="''"
       [width]="'600px'"
       [center]="true"
@@ -32,17 +34,10 @@
           <h3
             class="mb-5 text-xl font-bold text-black dark:text-gray-600 sm:text-2xl lg:text-xl xl:text-2xl"
           >
-            Comprehensive Accounting
+            {{ translations.feature1_title }}
 
           </h3>
-          <p
-            class="pr-[10px] text-base font-medium leading-relaxed text-body-color"
-          >
-            
-Providing an integrated accounting system covering finances, general ledger, daily entries, check cycles, with accurate financial reports
-
-
-          </p>
+          <p class="pr-[10px] text-base font-medium leading-relaxed text-body-color">{{ translations.feature1 }} </p>
         </div>
       </div>
       <div class="w-full">
@@ -62,16 +57,13 @@ Providing an integrated accounting system covering finances, general ledger, dai
           <h3
             class="mb-5 text-xl font-bold text-black dark:text-gray-600 sm:text-2xl lg:text-xl xl:text-2xl"
           >
-            Smart Camera System
+          {{ translations.feature2_title }}
           </h3>
           <p
             class="pr-[10px] text-base font-medium leading-relaxed text-body-color"
           >
             
-The smart camera system in Inveep is a system that utilizes artificial intelligence (AI) and data analysis technologies to enhance the functions of monitoring and imaging within point of sale environments. These are not just traditional cameras, but innovative algorithmic devices from the Inveep team capable of pattern recognition, automatic video analysis, and decision-making based on collected data.
-
-
-          </p>
+          {{ translations.feature2 }} </p>
         </div>
       </div>
       <div class="w-full">
@@ -92,17 +84,14 @@ The smart camera system in Inveep is a system that utilizes artificial intellige
             class="mb-5 text-xl font-bold text-black dark:text-gray-600 sm:text-2xl lg:text-xl xl:text-2xl"
           >
             
-Point of Sale Management and Accounting System
+          {{ translations.feature3_title }}
 
           </h3>
           <p
             class="pr-[10px] text-base font-medium leading-relaxed text-body-color"
           >
             
-The sales system in the inveep Platform allows you to issue electronic invoices, track sales, and efficiently manage point of sale.
-
-
-          </p>
+          {{ translations.feature3 }} </p>
         </div>
       </div>
       <div class="w-full">
@@ -124,17 +113,14 @@ The sales system in the inveep Platform allows you to issue electronic invoices,
             class="mb-5 text-xl font-bold text-black dark:text-gray-600 sm:text-2xl lg:text-xl xl:text-2xl"
           >
             
-Customer Relationships
+          {{ translations.feature4_title }}
 
           </h3>
           <p
             class="pr-[10px] text-base font-medium leading-relaxed text-body-color"
           >
             
-The customer management system in the platform allows you to easily track customers, manage loyalty points, and schedule appointments.
-
-
-          </p>
+          {{ translations.feature4 }}</p>
         </div>
       </div>
       <div class="w-full">
@@ -155,17 +141,14 @@ The customer management system in the platform allows you to easily track custom
             class="mb-5 text-xl font-bold text-black dark:text-gray-600 sm:text-2xl lg:text-xl xl:text-2xl"
           >
             
-Employee Affairs with Ease
+          {{ translations.feature5_title }}
 
           </h3>
           <p
             class="pr-[10px] text-base font-medium leading-relaxed text-body-color"
           >
             
-The system allows you to efficiently manage employees, organizational structure, employee attendance, contracts, and requests.
-
-
-          </p>
+          {{ translations.feature5 }}</p>
         </div>
       </div>
       <div class="w-full">
@@ -186,17 +169,13 @@ The system allows you to efficiently manage employees, organizational structure,
             class="mb-5 text-xl font-bold text-black dark:text-gray-600 sm:text-2xl lg:text-xl xl:text-2xl"
           >
             
-Effective Warehouse and Inventory Management
+          {{ translations.feature6_title }}
 
           </h3>
           <p
             class="pr-[10px] text-base font-medium leading-relaxed text-body-color"
           >
-          
-Inveep platform enables you to efficiently track products and services, purchases, manage suppliers, and update warehouse inventory
-
-
-          </p>
+          {{ translations.feature6 }}</p>
         </div>
       </div>
       <div class="w-full">
@@ -216,16 +195,12 @@ Inveep platform enables you to efficiently track products and services, purchase
           <h3
             class="mb-5 text-xl font-bold text-black dark:text-gray-600 sm:text-2xl lg:text-xl xl:text-2xl"
           >
-            Quotations
+          {{ translations.feature7_title }}
           </h3>
           <p
             class="pr-[10px] text-base font-medium leading-relaxed text-body-color"
           >
-            
-Creating and Managing Quotations. Invoices: Managing and Tracking Invoices. Receipts and Deliveries Notes: Managing Inventory Movement.
-
-
-          </p>
+          {{ translations.feature7 }}</p>
         </div>
       </div>
       <div class="w-full">
@@ -246,17 +221,13 @@ Creating and Managing Quotations. Invoices: Managing and Tracking Invoices. Rece
             class="mb-5 text-xl font-bold text-black dark:text-gray-600 sm:text-2xl lg:text-xl xl:text-2xl"
           >
             
-Financial Transactions
+          {{ translations.feature8_title }}
 
           </h3>
           <p
             class="pr-[10px] text-base font-medium leading-relaxed text-body-color"
           >
-           
-Track transactions, credits, funds, and expenses. Manage profits
-
-
-          </p>
+          {{ translations.feature8 }}</p>
         </div>
       </div>
       <div class="w-full">
@@ -277,19 +248,16 @@ Track transactions, credits, funds, and expenses. Manage profits
             class="mb-5 text-xl font-bold text-black dark:text-gray-600 sm:text-2xl lg:text-xl xl:text-2xl"
           >
           
-Advanced Reports and Analytics
-
+          {{ translations.feature9_title }}
           </h3>
           <p
             class="pr-[10px] text-base font-medium leading-relaxed text-body-color"
           >
-            
-The system provides detailed reports and performance analytics, facilitating informed strategic decision-making.
-
-
-          </p>
+          {{ translations.feature9 }}</p>
         </div>
       </div>
     </div>
   </div>
+  <div class="absolute left-[-10%] rounded-full -z-10 bg-primary blur-[10em] xl:blur-[10em]" style="height: 20rem; width: 20rem;margin-bottom: 20em;"></div>
+
 </section>

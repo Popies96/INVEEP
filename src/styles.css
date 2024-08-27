@@ -2,11 +2,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+.arabic-text {
+  font-family: 'Cairo', sans-serif;
+}
 
 body {
     font-family: "Poppins", "Montserrat";
     /*background-color: #1a2b42;*/
-    background-color: #f0f0f0;
+    background-color: #f3f3f3;
     font-size: 15px;
 }
 
@@ -76,3 +81,17 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 }
 
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.rtl .text-rotator {
+  padding-right: 1vh;
+  padding-left: 35vh;
+}
+
+
+.rtl .text-container {
+  order: 2; 
+}

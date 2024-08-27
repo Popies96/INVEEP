@@ -1,0 +1,83 @@
+{
+    "headerTitle": "IA et Vision par Ordinateur\n",
+    "for":"pour la Gestion \n des ",
+    "textRotator1": "entreprises",
+    "textRotator2": "factures",
+    "textRotator3": "ventes",
+    "textRotator4": "inventaire",
+    "textRotator5": "employés",
+    
+       "description": "Un système ERP avancé pour la gestion d'Inveep, intégrant l'IA et la vision par ordinateur. Il prend en charge les factures, les ventes, l'inventaire, les employés, et plus encore, avec une interface conviviale et un support pour la langue arabe. Le système contrôle également le POS en utilisant les entrées de la caméra pour un enregistrement précis des transactions."
+ ,
+ "HOME" : "Accueil",
+ "ABOUT": "À propos",
+ "SOLUTION": "Solution",
+ "FEATURES": "Fonctionnalités",
+ "TESTIMONIALS": "Témoignages",
+ "CONTACT": "Contact",
+ "CONTACT_US": "Contactez-nous",
+ "GET_STARTED": "Commencer",
+ "english":"Anglais",
+ "french":"Francais",
+ "arabic":"Arabe" , 
+ "about_us": "À propos de nous" ,
+ "start_now": "Commencez maintenant" ,
+
+"vision":"Notre Vision",
+"about_t" : "Inveep est une application web utilisée pour la facturation, le stockage et la distribution électronique ; ainsi que l'organisation de comptes commerciaux pour les PME. L'application est divisée en deux parties, une section pour les préoccupations commerciales (Suivi et envoi des factures, factures pro-forma, offres de prix, affichage des comptes clients et factures et envoi instantané, comptes bancaires etc…) tandis que l'autre section pour le suivi immédiat- mise en place de la distribution électronique, des distributeurs et des services de livraison. C'est un logiciel de facturation destiné aux PME, aux entrepreneurs et aux travailleurs indépendants.",
+"vision_t":"Le chemin a été bien excitant jusqu’à présent, avec des étapes importantes. Nous avons été labélisé par l'initiative nationale « Startup Tunisie » , Cependant, notre histoire ne s’arrête pas là. Nous sommes là pour rester et nous serions enchantés si vous pouviez nous rejoindre, que ce soit comme utilisateur ou même comme membre de l’équipe.",
+
+
+ "features": "Fonctionnalités Principales",
+ "feature1_title": "Système Comptable Complet",
+  "feature1": "Fournir un système comptable intégré couvrant les finances, le grand livre général, les écritures quotidiennes, les cycles de chèques, avec des rapports financiers précis",
+  "feature2_title": "Système de Caméra Intelligente",
+  "feature2": "Le système de caméra intelligente dans Inveep est un système qui utilise des technologies d'intelligence artificielle (IA) et d'analyse des données pour améliorer les fonctions de surveillance et d'imagerie dans les environnements de point de vente. Ce ne sont pas simplement des caméras traditionnelles, mais des dispositifs algorithmiques innovants de l'équipe Inveep capables de reconnaissance de motifs, d'analyse vidéo automatique et de prise de décision basée sur les données collectées.",
+  "feature3_title": "Gestion des Ventes",
+  "feature3": "Le système de vente sur la plateforme Inveep vous permet d'émettre des factures électroniques, de suivre les ventes et de gérer efficacement le point de vente.",
+  "feature4_title": "Gestion des Clients",
+  "feature4": "Le système de gestion des clients sur la plateforme vous permet de suivre facilement les clients, de gérer les points de fidélité et de planifier des rendez-vous.",
+  "feature5_title": "Gestion des Employés",
+  "feature5": "Le système vous permet de gérer efficacement les employés, la structure organisationnelle, les présences des employés, les contrats et les demandes.",
+  "feature6_title": "Gestion Efficace des Entrepôts et des Inventaires",
+  "feature6": "La plateforme Inveep vous permet de suivre efficacement les produits et services, les achats, de gérer les fournisseurs et de mettre à jour l'inventaire des entrepôts.",
+  "feature7_title": "Devis",
+  "feature7": "Création et Gestion des Devis. Factures : Gestion et Suivi des Factures. Reçus et Bons de Livraison : Gestion des Mouvements d'Inventaire.",
+  "feature8_title": "Transactions Financières",
+  "feature8": "Suivi des transactions, crédits, fonds et dépenses. Gestion des profits.",
+  "feature9_title": "Rapports et Analyses Avancés",
+  "feature9": "Le système fournit des rapports détaillés et des analyses de performance, facilitant une prise de décision stratégique éclairée." , 
+
+
+  "action1": "Vous cherchez les meilleures solutions digitales et marketing ?",
+  "action2": "Commencez Maintenant",
+  "action3": "Vous cherchez les meilleures solutions digitales et marketing ? Ne cherchez pas plus loin ! Nous sommes là pour vous. Avec notre expérience, créativité et engagement envers le succès de nos clients, nous sommes prêts à relever tous les défis pour vous aider à atteindre vos objectifs.",
+
+  "testimonials": "Avis Clients" ,
+
+
+  "solution_t": "Nous aidons au développement de votre entreprise",
+  "solution": "La plateforme Inveep offre une solution unifiée pour améliorer la gestion de votre entreprise et accroître l'efficacité dans tous les aspects clés. Commencez dès aujourd'hui et profitez d'une expérience de gestion Inveep efficace et simplifiée.",
+  "solution_t1": "Facturation électronique et gestion des taxes sans effort",
+  "solution1": "La plateforme Inveep améliore la gestion, en optimisant tout, de la facturation au suivi des stocks.",
+  "solution_t2": "Contrôlez vos opérations",
+  "solution2": "Gérez efficacement les factures électroniques, le point de vente et les assurances - tout cela avec Inveep, votre solution d'affaires complète.",
+  "solution_t3": "Gestion complète des stocks",
+  "solution3": "Personnalisez la plateforme Inveep avec des applications de gestion intégrées pour répondre aux besoins spécifiques de votre entreprise et de votre industrie.",
+
+
+  "contact": "Restons en contact !",
+  "contact_t": "Que vous ayez des questions, besoin d'un devis, ou simplement envie de discuter de vos idées, notre équipe est là pour vous. Remplissez le formulaire de contact ci-dessous et nous vous répondrons dans les plus brefs délais. Ensemble, nous pouvons créer quelque chose d'exceptionnel pour votre entreprise.",
+  "location": "Notre emplacement",
+  "location_t": "Lac Shore 1003, Tunis",
+  "mail": "Vous pouvez également nous contacter par email",
+  "mail_t": "info@inveep.com",
+  "contact_title": "Envoyez-nous un message",
+  "name": "Nom complet*",
+  "Company": "Nom de l'entreprise*",
+  "email": "Email*",
+  "number": "Numéro de téléphone*",
+  "msg": "Message*",
+  "send": "Envoyer"
+}
+  

@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
+import { TranslationService } from '../../services/translation.service';
+import { HeroSectionComponent } from '../hero-section/hero-section.component';
 
 @Component({
   selector: 'app-testimonials',
@@ -14,4 +16,13 @@ import { trigger, transition, style, animate } from '@angular/animations';
     ])
   ]
 })
-export class TestimonialsComponent {}
+export class TestimonialsComponent extends HeroSectionComponent implements OnInit {
+
+  constructor(public override translationService: TranslationService) {
+    super(translationService); 
+  }
+
+  override ngOnInit(): void {
+    super.ngOnInit(); 
+}
+}
