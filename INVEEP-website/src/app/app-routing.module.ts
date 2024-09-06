@@ -6,6 +6,8 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
 import { ShopComponent } from './pages/shop/shop.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { SignInComponent } from './pages/sign-in/sign-in.component';
 
 
 
@@ -14,7 +16,9 @@ const routes: Routes = [
 
   { path: 'shop', component: ShopComponent },
   { path: 'profile/:id', component: ProfileComponent },
-  {path: 'products' , component: ProductsComponent}
+  { path: 'products', component: ProductsComponent },
+  { path: 'signup', component: SignUpComponent },
+  { path: 'signin', component: SignInComponent },
 ];
 
 @NgModule({

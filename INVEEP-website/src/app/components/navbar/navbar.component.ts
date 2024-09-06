@@ -23,6 +23,10 @@ export class NavbarComponent {
 scrollToContact() {
   this.router.navigate([], { fragment: 'contact' });
 }
+goToRegister () {
+  this.router.navigate(['/signup'])
+
+}
 }
 
 

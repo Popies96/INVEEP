@@ -2,17 +2,26 @@
 
 import express from "express";
 import {
-  createUser,
+  
   getUsers,
   getUser,
   updateUser,
   deleteUser,
+  loginUser,
+  registerUser,
 } from "../controllers/userController.js"; // Adjust the path according to your project structure
-
+import authMiddleware from "../midlleware/authMiddleware.js"
 const router = express.Router();
 
-// Create a new user
-router.post("/", createUser);
+// Register a new user
+router.post("/register", registerUser);
+
+// Login a user
+router.post("/login", loginUser);
+
+
+
+
 
 // Get all users
 router.get("/", getUsers);

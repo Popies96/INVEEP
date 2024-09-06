@@ -15,8 +15,22 @@ export function User(sequelize) {
         allowNull: false,
         unique: "username",
       },
+      lastName:{
+        type: DataTypes.STRING(255),
+        allowNull:false,
+
+      },
+      phone:{
+        type:DataTypes.STRING(8),
+        allowNull:false,
+      },
+      websiteUrl:{
+       type:DataTypes.STRING(255),
+       allowNull:true
+      },
+
       cin: {
-        type: DataTypes.BIGINT,
+        type: DataTypes.STRING(8),
         allowNull: false,
       },
       email: {
@@ -35,7 +49,12 @@ export function User(sequelize) {
       profile_image: {
         type: DataTypes.STRING(300),
         allowNull: true,
-      }
+      },
+      role: {
+        type: DataTypes.ENUM("shop_owner", "visitor"), 
+        allowNull: false,
+        defaultValue: "visitor", 
+      },
     },
     {
       sequelize,

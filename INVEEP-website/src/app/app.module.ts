@@ -31,6 +31,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { UserService } from './user.service';
 import {  HttpClientModule } from '@angular/common/http';
 import { ProductsComponent } from './pages/products/products.component';
+import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { SignInComponent } from './pages/sign-in/sign-in.component';
 
 
 
@@ -59,8 +61,17 @@ import { ProductsComponent } from './pages/products/products.component';
     ShopComponent,
     ProfileComponent,
     ProductsComponent,
+    SignUpComponent,
+    SignInComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule,HttpClientModule,FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
+  ],
   providers: [UserService],
   bootstrap: [AppComponent],
 })
