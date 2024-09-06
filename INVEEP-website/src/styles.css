@@ -1,0 +1,97 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+.arabic-text {
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+    font-family: "Poppins", "Montserrat";
+    /*background-color: #1a2b42;*/
+    background-color: #f3f3f3;
+    font-size: 15px;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1; 
+      transform: translate(0, 0); 
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .hero-text {
+      font-size: 5rem;
+    }
+  }
+  
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+@keyframes floatIn {
+  from {
+    transform: translate(20px,-20px); 
+    opacity: 0; 
+  }
+  to {
+    transform: translateY(0); 
+    opacity: 1;
+  }
+}
+
+.float-in {
+  animation: floatIn 1.5s ease-out; 
+  box-sizing: border-box;
+}
+
+@keyframes floatInL {
+  from {
+    transform: translate(-20px,-20px); 
+    opacity: 0; 
+  }
+  to {
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+
+.float-in-l {
+  animation: floatInL 1.5s ease-out; 
+  box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+  .hide-on-small {
+    display: none;
+  }
+  .content-container {
+    padding: 3rem; 
+  }
+}
+
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.rtl .text-rotator {
+  padding-right: 1vh;
+  padding-left: 35vh;
+}
+
+
+.rtl .text-container {
+  order: 2; 
+}

@@ -1,0 +1,174 @@
+<section id="contact" class="relative mt-24 py-20 md:py-[120px]">
+  <div  class="absolute left-0 top-0 -z-[1] h-full w-full bg-primary dark:bg-primary"></div>
+  
+  <div [ngClass]="{'arabic-text': translationService.getCurrentLang() === 'ar',
+  'rtl': translationService.getCurrentLang() === 'ar'
+}" class=" mx-12 px-4">
+    <div class="mx-4 flex flex-wrap items-center">
+      <div class="w-full px-4 lg:w-7/12 xl:w-8/12">
+        <div class="ud-contact-content-wrapper">
+          <div class="ud-contact-title mb-12 lg:mb-[150px]">
+            <h2
+              class="max-w-[500px] mb-4 text-[45px] font-semibold leading-[1.14] text-gray-700 dark:text-gray-700"
+            >
+             {{translations.contact}}
+            </h2>
+            <span
+              class="mb-6 mr-10 block text-base text-[18px] font-medium text-white dark:text-white"
+            >
+            {{translations.contact_t}}
+            </span>
+          </div>
+          <div class="mb-12 flex flex-wrap justify-between lg:mb-0">
+            <div class="mt-8 flex w-[330px] max-w-full">
+              <div class="mr-6 text-[32px] text-primary">
+                <svg
+                  width="40"
+                  height="55"
+                  viewBox="0 0 29 35"
+                  class="fill-blue"
+                >
+                <path d="M12,.042a9.992,9.992,0,0,0-9.981,9.98c0,2.57,1.99,6.592,5.915,11.954a5.034,5.034,0,0,0,8.132,0c3.925-5.362,5.915-9.384,5.915-11.954A9.992,9.992,0,0,0,12,.042ZM12,14a4,4,0,1,1,4-4A4,4,0,0,1,12,14Z"/></svg>
+              </div>
+              <div>
+                <h3
+                  class="mb-[18px] text-lg font-semibold text-dark dark:text-white"
+                >
+                {{translations.location}}
+                </h3>
+                <p class="text-base text-white dark:text-white">
+                  {{translations.location_t}}
+                </p>
+              </div>
+            </div>
+            <div class="mt-8 flex w-[330px] max-w-full">
+              <div class="mr-6 text-[32px] text-primary">
+                <svg
+                  width="50"
+                  height="40"
+                  viewBox="0 0 34 25"
+                  class="fill-blue"
+                >
+                <path d="M23.954,5.542,15.536,13.96a5.007,5.007,0,0,1-7.072,0L.046,5.542C.032,5.7,0,5.843,0,6V18a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V6C24,5.843,23.968,5.7,23.954,5.542Z"/><path d="M14.122,12.546l9.134-9.135A4.986,4.986,0,0,0,19,1H5A4.986,4.986,0,0,0,.744,3.411l9.134,9.135A3.007,3.007,0,0,0,14.122,12.546Z"/></svg>
+              </div>
+              <div>
+                <h3
+                  class="mb-[18px] text-lg font-semibold text-white dark:text-white"
+                >
+                {{translations.mail}}
+                </h3>
+                <p class="text-base text-white dark:text-white">
+                  info&#64;inveep.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div  class="w-full px-1  lg:w-5/12 xl:w-4/12">
+        <div style = "margin-left: 10vh;"
+          class="wow fadeInUp rounded-lg bg-white px-12 py-10 shadow-testimonial dark:shadow-none sm:px-10 sm:py-12 md:p-[60px] lg:p-10 lg:px-10 lg:py-12 2xl:p-[60px]"
+          data-wow-delay=".2s
+          "
+        >
+          <h3
+            class="mb-8 text-2xl font-semibold text-black text-gray-700 md:text-[28px] md:leading-[1.42]"
+          >
+          {{translations.contact_title}}
+          </h3>
+          <form>
+            <div class="mb-[22px]">
+              <label
+                for="fullName"
+                class="mb-4 block text-sm text-dark-6 dark:text-dark-6"
+              >
+              {{translations.name}}
+              </label>
+              <input
+                type="text"
+                name="fullName"
+                placeholder="Adam Gelius"
+                class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none"
+              />
+            </div>
+            <div class="mb-[22px]">
+              <label
+                for="email"
+                class="mb-4 block text-sm text-dark-6 dark:text-dark-6"
+              >
+              {{translations.company}}
+              </label>
+              <input
+                type="email"
+                name="email"
+                placeholder="example@yourmail.com"
+                class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none"
+              />
+            </div>
+            <div class="mb-[22px]">
+              <label
+                for="email"
+                class="mb-4 block text-sm text-dark-6 dark:text-dark-6"
+              >
+              {{translations.email}}
+              </label>
+              <input
+                type="email"
+                name="email"
+                placeholder="example@yourmail.com"
+                class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none"
+              />
+            </div>
+            <div class="mb-[22px]">
+              <label
+                for="phone"
+                class="mb-4 block text-sm text-dark-6 dark:text-dark-6"
+              >
+              {{translations.number}}
+              </label>
+              <input
+                type="text"
+                name="phone"
+                placeholder="+885 1254 5211 552"
+                class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none"
+              />
+            </div>
+            <div class="mb-[30px]">
+              <label for="message" class="mb-4 block text-sm text-body-color">
+                {{translations.msg}}
+              </label>
+              <textarea
+                name="message"
+                rows="1"
+                placeholder="type your message here"
+                class="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none"
+              ></textarea>
+            </div>
+            <div class="mb-0">
+              <button
+                type="submit"
+                class="inline-flex items-center justify-center rounded-md bg-blue px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-primary/90"
+              >
+              {{translations.send}}
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="flex animate-scroll-right-left" style="margin-top: 20vh;">
+      <img
+        class="w-3/4 flex-shrink-0"
+        style="margin-right: 30em;"
+        src="../../../assets/partnersList.svg"
+        alt="Partners List"
+      />
+      <img
+        class="w-3/4 flex-shrink-0"
+        src="../../../assets/partnersList.svg"
+        alt="Partners List"
+      />
+    </div>
+  </div>
+  
+</section>

@@ -1,0 +1,90 @@
+{
+  "headerTitle": "AI and Computer Vision \n \n ",
+  "for":"for",
+  "textRotator1": "business",
+  "textRotator2": "invoices",
+  "textRotator3": "sales",
+  "textRotator4": "inventory",
+  "textRotator5": "employee",
+  "managementText": "Management",
+  "description": "An advanced ERP system for managing Inveep, integrating AI and computer vision. It supports invoices, sales, inventory, employees, and more, with a user-friendly interface and Arabic language support. The system also controls POS using camera inputs for accurate transaction recording."
+,
+
+
+  "HOME" : "Home",
+"ABOUT": "About",
+"SOLUTION": "Solution",
+"FEATURES": "Features",
+"TESTIMONIALS": "Testimonials",
+"CONTACT": "Contact",
+"CONTACT_US": "Contact-us",
+"GET_STARTED": "Get started",
+ "english":"English",
+ "french":"French",
+ "arabic":"Arabic" , 
+ "about_us": "About us " , 
+ "start_now": "Start now",
+
+
+
+"vision":"Our Vision",
+"about_t" : "Inveep is a web application used for invoicing, storage, and electronic distribution, as well as the organization of business accounts for SMEs. The application is divided into two parts: one section for business concerns (tracking and sending invoices, pro forma invoices, price quotes, displaying client accounts and invoices, instant sending, bank accounts, etc.) and another section for immediate follow-up—setting up electronic distribution, distributors, and delivery services. It is an invoicing software designed for SMEs, entrepreneurs, and freelancers.",
+"vision_t": "The journey has been quite exciting so far, with significant milestones. We have been labeled by the national initiative 'Startup Tunisia'. However, our story does not end here. We are here to stay, and we would be delighted if you could join us, whether as a user or even as a member of the team.",
+ "features":"Main Features",
+  "feature1_title": "Comprehensive Accounting System",
+  "feature1": "Providing an integrated accounting system covering finances, general ledger, daily entries, check cycles, with accurate financial reports",
+  "feature2_title": "Smart Camera System",
+  "feature2": "The smart camera system in Inveep is a system that utilizes artificial intelligence (AI) and data analysis technologies to enhance the functions of monitoring and imaging within point of sale environments. These are not just traditional cameras, but innovative algorithmic devices from the Inveep team capable of pattern recognition, automatic video analysis, and decision-making based on collected data.",
+  "feature3_title": "Sales Management",
+  "feature3": "The sales system in the inveep Platform allows you to issue electronic invoices, track sales, and efficiently manage point of sale.",
+  "feature4_title": "Customer Management",
+  "feature4": "The customer management system in the platform allows you to easily track customers, manage loyalty points, and schedule appointments.",
+  "feature5_title": "Employee Management",
+  "feature5": "The system allows you to efficiently manage employees, organizational structure, employee attendance, contracts, and requests.",
+  "feature6_title": "Effective Warehouse and Inventory Management",
+  "feature6": "Inveep platform enables you to efficiently track products and services, purchases, manage suppliers, and update warehouse inventory",
+  "feature7_title": "Quotations",
+  "feature7": "Creating and Managing Quotations. Invoices: Managing and Tracking Invoices. Receipts and Deliveries Notes: Managing Inventory Movement.",
+  "feature8_title": "Financial Transactions",
+  "feature8": "Track transactions, credits, funds, and expenses. Manage profits" ,
+  "feature9_title": "Advanced Reports and Analytics",
+  "feature9": "The system provides detailed reports and performance analytics, facilitating informed strategic decision-making.",
+
+
+  "action1":"Are you looking for the best digital and marketing solutions?",
+  "action2":"Get Started Now",
+  "action3":"Are you looking for the best digital and marketing solutions? Look no further! We are here for you. With our experience, creativity, and commitment to the success of our clients, we are ready to face any challenge to help you achieve your goals.",
+ 
+ 
+  "testimonials":"Customer Reviews",
+
+"solution_t":"We help in developing your company",
+"solution":"Inveep platform offers a unified solution to enhance your business management and improve efficiency across all key aspects.Start today and benefit from an effective and simplified Inveep management experience.",
+"solution_t1":"Effortless E-Invoicing and Tax handling",
+"solution1":"The Inveep Platform enhances management, optimizing everything from invoicing to inventory tracking.",
+"solution_t2":"Control your operations",
+"solution2":"Efficiently manage electronic invoices, point of sale, and insurance -all through Inveep, your complete business solution.",
+"solution_t3":"Comprehensive Inventory Management",
+"solution3":"Customize the Inveep Platform with embedded management applications to meet your specific business and industry needs.",
+
+
+
+"contact":"Let's stay in touch!",
+"contact_t":"Whether you have questions, need a quote, or simply want to discuss your ideas, our team is here for you. Fill out the contact form below, and we'll get back to you as soon as possible. Together, we can create something exceptional for your business", 
+"location":"Our location",
+"location_t":"Lake Shore 1003, Tunis",
+"mail":"You can also contact us via email",
+"mail_t":"info@inveep.com",
+
+"contact_title" :"Send us a Message",
+"name" :"Full Name*",
+"Company" :"Company's Name*",
+"email" :"Email*",
+"number" :"Phone Number*",
+"msg" :"Message*",
+"send" :"Send"
+
+}
+
+
+

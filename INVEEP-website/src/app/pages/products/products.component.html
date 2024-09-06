@@ -1,0 +1,113 @@
+<app-shop-nav></app-shop-nav>
+<div class="max-w-2xl  lg:max-w-7xl mx-auto pt-10 mb-14">
+  <div class="flex">
+    <!-- Filter Section -->
+    <aside class=" w-1/4 p-8 mr-4 mb-6 bg-gray-100">
+      <h2 class="text-xl mb-6 mt-4">Filter by Price</h2>
+      <div class="flex-col mb-6">
+        <label class="block mb-2">Price Range:</label>
+        <input type="range" min="0" max="1000" class="w-full">
+        <div class="flex pt-2  justify-between items-center">
+         <h5>lowest</h5>
+         <h5>largest</h5>
+        </div>
+      </div>
+      <hr class="my-4 border-gray-300">
+      
+      <!-- Category Section -->
+      
+      
+      <!-- Category 1 -->
+      <details class="mb-4">
+        <summary class="cursor-pointer text-lg font-medium">options</summary>
+        <div class="mt-2 ml-4">
+          <label class="block">
+            <input type="checkbox" class="mr-2"> Option 1
+          </label>
+          <label class="block">
+            <input type="checkbox" class="mr-2"> Option 2
+          </label>
+          <label class="block">
+            <input type="checkbox" class="mr-2"> Option 3
+          </label>
+        </div>
+      </details>
+      <hr class="my-4 border-gray-300">
+      
+      <!-- Category 2 -->
+      <details class="mb-4">
+        <summary class="cursor-pointer text-lg font-medium">options</summary>
+        <div class="mt-2 ml-4">
+          <label class="block">
+            <input type="checkbox" class="mr-2"> Option 1
+          </label>
+          <label class="block">
+            <input type="checkbox" class="mr-2"> Option 2
+          </label>
+          <label class="block">
+            <input type="checkbox" class="mr-2"> Option 3
+          </label>
+        </div>
+      </details>
+      <hr class="my-4 border-gray-300">
+      
+      <!-- Category 3 -->
+      <details class="mb-4">
+        <summary class="cursor-pointer text-lg font-medium">options</summary>
+        <div class="mt-2 ml-4 ">
+          <label class="block">
+            <input type="checkbox" class="mr-2"> Option 1
+          </label>
+          <label class="block">
+            <input type="checkbox" class="mr-2"> Option 2
+          </label>
+          <label class="block">
+            <input type="checkbox" class="mr-2"> Option 3
+          </label>
+        </div>
+      </details>
+    </aside>
+
+    <!-- Products Section -->
+    <main class="w-3/4 p-2 ">
+      <!-- Sorting Options -->
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-semibold">Products</h2>
+        <div>
+          <label for="sort" class="mr-2">Sort by:</label>
+          <select id="sort" class="p-2 border border-gray-300 rounded">
+            <option value="popularity">Popularity</option>
+            <option value="price-low-high">Price: Low to High</option>
+            <option value="price-high-low">Price: High to Low</option>
+            <option value="newest">Newest</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-5 xl:grid-cols-3 xl:gap-6"
+      >
+        <!-- Product Card -->
+        <div class="bg-white p-4 h-full hover:border-primary border-2 rounded-xl shadow-md">
+            <div class="mb-3 w-full"> <img src="" alt="product image"></div>
+           
+          <h3 class="text-lg font-semibold mb-2">Product Name</h3>
+          <p class="text-gray-700 mb-1">Price: $100</p>
+          <p class="text-gray-500 mb-1">Shop: Example Shop</p>
+          <p class="text-gray-600">This is a brief description of the product.</p>
+        </div>
+
+        <!-- Repeat for more product cards -->
+        <div class="bg-white p-4 rounded shadow-md">
+          <h3 class="text-lg font-semibold mb-2">Another Product</h3>
+          <p class="text-gray-700 mb-1">Price: $150</p>
+          <p class="text-gray-500 mb-1">Shop: Another Shop</p>
+          <p class="text-gray-600">This is a brief description of another product.</p>
+        </div>
+
+        <!-- Add more product cards as needed -->
+      </div>
+    </main>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,139 @@
+.title-lg {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+@media (min-width: 1280px) {
+    .title-lg {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+}
+
+
+.animated-image {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+/* Slide in from right and fade in */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Slide out to the right and fade out */
+@keyframes slideOutToRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+.animate {
+  animation: slideInFromRight 5s cubic-bezier(0.42, 0, 0.58, 1) infinite, 
+             slideOutToRight 5s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+
+.animated-image:nth-child(2) {
+  animation: slideInFromRight 5s cubic-bezier(0.42, 0, 0.58, 1) 0s 1 normal forwards, 
+             slideOutToRight 5s cubic-bezier(0.42, 0, 0.58, 1) 9s 1 normal forwards;
+}
+
+.animated-image:nth-child(3) {
+  animation: slideInFromRight 5s cubic-bezier(0.42, 0, 0.58, 1) 11s 1 normal forwards, 
+             slideOutToRight 5s cubic-bezier(0.42, 0, 0.58, 1) 20s 1 normal forwards;
+}
+
+.animated-image:nth-child(4) {
+  animation: slideInFromRight 5s cubic-bezier(0.42, 0, 0.58, 1) 22s 1 normal forwards, 
+             slideOutToRight 5s cubic-bezier(0.42, 0, 0.58, 1) 31s 1 normal forwards;
+}
+.animated-image:nth-child(5) {
+  animation: slideInFromRight 5s cubic-bezier(0.42, 0, 0.58, 1) 33s 1 normal forwards, 
+             slideOutToRight 5s cubic-bezier(0.42, 0, 0.58, 1) 42s 1 normal forwards;
+}
+
+
+/* -----------------------------------------------------------------------------------*/
+  .text-rotator {
+    position: relative;
+    width: auto;
+    height: 1.2em; 
+    overflow: hidden;
+}
+
+.text-item {
+    position: absolute;
+    width: 100%;
+    transform: rotateX(90deg);
+    backface-visibility: hidden;
+    animation: flipText 40s infinite;
+}
+
+.text-item:nth-child(1) {
+    animation-delay: 0s;
+    opacity: 1;
+    color: #5CC59E;
+}
+
+.text-item:nth-child(2) {
+    animation-delay: 8s; 
+    color: #818CF8;
+}
+
+.text-item:nth-child(3) {
+    animation-delay: 16s; 
+    color: #5CC59E;
+}
+
+.text-item:nth-child(4) {
+    animation-delay: 24s; 
+    color: #818CF8;
+  
+}
+
+.text-item:nth-child(5) {
+    animation-delay: 32s; 
+    color: #5CC59E;
+}
+
+@keyframes flipText {
+  0%, 20% {
+      transform: rotateX(0deg);
+      opacity: 1;
+  }
+  21%, 25% {
+      transform: rotateX(90deg);
+      opacity: 0.5;
+  }
+  26%, 30% {
+      transform: rotateX(90deg);
+      opacity: 0;
+  }
+  31%, 100% {
+      transform: rotateX(0deg);
+      opacity: 0;
+  }
+}
+
+
+
+  

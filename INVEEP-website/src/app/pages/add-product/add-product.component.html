@@ -1,0 +1,99 @@
+<app-shop-nav></app-shop-nav>
+
+<div class="px-28 py-8">
+<div class="px-8 py-12 border-2 rounded-2xl bg-white">
+
+
+    <div class="flex justify-between items-center pb-4 mb-4 rounded-t border-b">
+        <h3 class="text-lg font-semibold text-gray-900">Add Product</h3>
+        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-toggle="createProductModal">
+            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="sr-only">Close modal</span>
+        </button>
+    </div>
+    <!-- Modal body -->
+     
+    <form (ngSubmit)="addProduct()">
+        <div class="grid gap-4 mb-4 sm:grid-cols-2">
+            <div>
+                <label for="name" class="block mb-2 text-sm font-medium text-gray-900"  >Product Name</label>
+                <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" placeholder="Product name" [(ngModel)]="newProduct.name" required>
+            </div>
+            <div>
+                <label for="category" class="block mb-2 text-sm font-medium text-gray-900"  >Category</label>
+                <select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
+                    <option selected>Select category</option>
+                    <option value="TV">TV/Monitors</option>
+                    <option value="PC">PC</option>
+                    <option value="GA">Gaming/Console</option>
+                    <option value="PH">Phones</option>
+                    <option value="CA">Car</option>
+                </select>
+            </div>
+            <div>
+                <label for="quantity" class="block mb-2 text-sm font-medium text-gray-900"  >Quantity</label>
+                <input type="number" name="quantity" id="quantity" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" [(ngModel)]="newProduct.quantite" placeholder="Quantity" required>
+            </div>
+            <div>
+                <label for="price" class="block mb-2 text-sm font-medium text-gray-900" >Price</label>
+                <input type="number" name="price" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" placeholder="100 DT" [(ngModel)]="newProduct.price" required>
+            </div>
+            <div class="sm:col-span-2">
+                <label for="description" class="block mb-2 text-sm font-medium text-gray-900" >Description</label>
+                <textarea id="description" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Write product description here" [(ngModel)]="newProduct.description"></textarea>
+            </div>
+        </div>
+        <div class="mb-4 space-y-4 sm:flex sm:space-y-0">
+            <div class="flex items-center mr-4">
+                <input id="inline-checkbox" type="checkbox" value="" name="sellingType" class="w-4 h-4 bg-gray-100 rounded border-gray-300 text-primary-600 focus:ring-primary-500 focus:ring-2">
+                <label for="inline-checkbox" class="ml-2 text-sm font-medium text-gray-900">In-store only</label>
+            </div>
+            <div class="flex items-center mr-4">
+                <input id="inline-2-checkbox" type="checkbox" value="" name="sellingType" class="w-4 h-4 bg-gray-100 rounded border-gray-300 text-primary-600 focus:ring-primary-500 focus:ring-2">
+                <label for="inline-2-checkbox" class="ml-2 text-sm font-medium text-gray-900">Online selling only</label>
+            </div>
+            <div class="flex items-center mr-4">
+                <input checked id="inline-checked-checkbox" type="checkbox" value="" name="sellingType" class="w-4 h-4 bg-gray-100 rounded border-gray-300 text-primary-600 focus:ring-primary-500 focus:ring-2">
+                <label for="inline-checked-checkbox" class="ml-2 text-sm font-medium text-gray-900">Both in-store and online</label>
+            </div>
+        </div>
+        <div class="mb-4">
+            <span class="block mb-2 text-sm font-medium text-gray-900">Product Images</span>
+            <div class="flex justify-center items-center w-full">
+                <label for="dropzone-file" class="flex flex-col justify-center items-center w-full h-64 bg-gray-50 rounded-lg border-2 border-gray-300 border-dashed cursor-pointer hover:bg-gray-100">
+                    <div class="flex flex-col justify-center items-center pt-5 pb-6">
+                        <svg aria-hidden="true" class="mb-3 w-10 h-10 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9A4 4 0 017 16z"></path>
+                        </svg>
+                        <p class="mb-2 text-sm text-gray-500"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+                        <p class="text-xs text-gray-500">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                    </div>
+                    <input id="dropzone-file" type="file" class="hidden">
+                </label>
+            </div>
+        </div>
+        <div class="flex items-center space-x-4">
+            <button type="submit"  class="text-white bg-blue hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center" >Add product</button>
+            <button type="button" class="text-gray-900 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-primary-700 focus:z-10">Cancel</button>
+        </div>
+    </form>
+    <div class="flex items-center mt-4">
+        <input checked id="checkbox-1" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-xl focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" >
+        <label for="checkbox-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree to the <a href="#" class="text-blue hover:underline dark:text-blue">terms and conditions</a>.</label>
+    </div>
+    </div>
+    
+
+<div id="toast-simple" class=" hidden flex items-center w-full max-w-xs p-4 space-x-4 rtl:space-x-reverse text-gray-500 bg-white divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800" role="alert">
+    <svg class="w-5 h-5 text-blue-600 dark:text-blue-500 rotate-45" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 17 8 2L9 1 1 19l8-2Zm0 0V9"/>
+    </svg>
+    <div class="ps-4 text-sm font-normal">Message sent successfully.</div>
+</div>
+
+    </div>
+
+
+<app-footer></app-footer>
